@@ -1,0 +1,93 @@
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  line-height: 1.6;
+  padding: 1rem;
+  margin: auto;
+}
+/* Add this to your existing CSS file */
+
+.centered {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.centered div {
+  width: 100%;
+  max-width: 850px;
+}
+
+.centered form{
+  width: calc(100% - 10rem);
+  padding: 0 5rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+}
+form input, form button{
+  background-color: #e7e7e7;
+  margin-bottom: 20px;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+form button:hover{
+  background-color: #c5c5c5;
+}
+
+.error-div{
+  color: red;
+  margin-bottom: 20px;
+  background-color: rgb(255, 183, 183);
+  padding: 1rem 0rem 1rem 0rem;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+
+.hero {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+}
+
+#hero-detail {
+  color: #555;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+li {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+li a {
+  font-size: 1.25rem;
+  color: #007acc;
+  text-decoration: none;
+  width: 100%;
+  display: inline-block;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+.highligthed{
+color:rgb(255, 166, 0)  
+}
+h1.highligthed{
+  font-size: 300%;
+}

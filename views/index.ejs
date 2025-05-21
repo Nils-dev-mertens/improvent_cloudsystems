@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>yes</title>
+</head>
+
+<body>
+    <div class="hero centered">
+        <div>
+            <h1>Cloudsystems documentation isn't the best. <span class="highligthed">So we are fixing it</span></h1>
+            <p>all documents are created by students from graduaat programeren AP</p>
+            <p id="hero-detail">head developer(Nils Mertens)</p>
+        </div>
+    </div>
+    <div class="centered">
+    <div>
+    <ul>
+    <% for( let title of titles ) { %>
+        <li><a href="/<%= title %>"><%= title %></a></li>
+        <% } %>
+    <% if (user != false) { %>
+        <li><a href="/create">Voeg uw eigen document toe</a></li>
+    <% } %>
+    </ul>
+    </div>
+    </div>
+    <!-- data-aos="fade-up" -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
