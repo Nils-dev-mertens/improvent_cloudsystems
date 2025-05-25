@@ -43,6 +43,10 @@ app.get("/update", (req, res) => {
 });
 
 app.get("/create", (req, res) => {
+    const jwt = req.cookies.jwt ?? null;
+    if(jwt == null){
+        return res.redirect("/");
+    }
     res.render("create", {errorm : ""});
 });
 
