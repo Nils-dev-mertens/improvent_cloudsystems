@@ -12,7 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4  
       - name: install dependencies
-        working-directory: ./website
         run: npm install
           
   builddockerimage:
